@@ -1,8 +1,47 @@
 <div class="pokemon">
-	<img src="">
-	<p class="names"><span class="name"></span> | <span class="pokeId"></span></p>
-	<p class="bio">Information: <p></p></p>
-	<div class="moves">
-		<div class="move" ng-repeat="move in moves"></div>
-	</div>
+  <img src="https://img.pokemondb.net/artwork/{{pokemon.name}}.jpg">
+  
+  <div class="info">
+    <p class="names">
+      <span class="name">
+      	Bulbasaur | <span class="pokeId">001</span> 
+      </span>      
+    </p>
+    
+    <div class="stats">
+      <table>
+        <tr>
+          <th>Stat</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>Height</td>
+          <td>{{pokemon.height}}</td>
+        </tr>
+
+        <tr>
+          <td>Height</td>
+          <td>{{pokemon.height}}</td>
+        </tr>
+        <tr>
+          <td>Height</td>
+          <td>{{pokemon.height}}</td>
+        </tr>
+        <tr>
+          <td>Height</td>
+          <td>{{pokemon.height}}</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="text">
+      <p>This pokemon is a pokemon that does things.</p>
+    </div>
+  </div>
+  
+  <div class="moves">
+  	<h2>Moveset</h2>
+	<div class="move" ng-repeat="move in moves"></div>
+  </div>
 </div>
