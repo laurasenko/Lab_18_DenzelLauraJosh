@@ -4,7 +4,7 @@
   <div class="info">
     <p class="names">
       <span class="name">
-      	Bulbasaur | <span class="pokeId">001</span> 
+      	{{pokemon.name}} | <span class="pokeId">{{pokemon.id}}</span> 
       </span>      
     </p>
     
@@ -17,20 +17,16 @@
 
         <tr>
           <td>Height</td>
-          <td>{{pokemon.height}}</td>
+          <td>{{pokemon.height/10}}m</td>
         </tr>
 
         <tr>
-          <td>Height</td>
-          <td>{{pokemon.height}}</td>
+          <td>Weight</td>
+          <td>{{pokemon.weight/10}}kg</td>
         </tr>
         <tr>
-          <td>Height</td>
-          <td>{{pokemon.height}}</td>
-        </tr>
-        <tr>
-          <td>Height</td>
-          <td>{{pokemon.height}}</td>
+          <td>Type</td>
+          <td>{{pokemon.types[0].type.name}}</td>
         </tr>
       </table>
     </div>
@@ -42,6 +38,6 @@
   
   <div class="moves">
   	<h2>Moveset</h2>
-	<div class="move" ng-repeat="move in moves"></div>
+	<div class="move" ng-repeat="move in moves | limitTo:4"></div>
   </div>
 </div>
