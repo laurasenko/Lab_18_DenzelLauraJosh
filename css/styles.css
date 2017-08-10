@@ -1,6 +1,14 @@
+@import url("Pokemon Solid.tff");
+
 *{
 	margin: 0;
 	padding:0;
+}
+
+@font-face {
+  font-family: 'Pokemon Solid';
+  font-style: normal;
+  font-weight: 400;
 }
 
 body {
@@ -11,10 +19,15 @@ nav {
 	height: 110px;
 	background-color: white;
 	text-align: center;
+  font-family: 'Pokemon Solid';
 }
 
 span {
 	font-size: 2em;
+}
+
+h1{
+  color: white;
 }
 
 .nav-link {
@@ -22,6 +35,10 @@ span {
 	color: white;
 	padding:3px;
 	border: none; 
+}
+
+.container-link {
+  color: white;
 }
 
 /*The styles for the selected Pokémon*/
@@ -49,3 +66,57 @@ span {
 .moves {
   width:90%;
 }
+
+
+fieldset {
+  background-color: red;
+  text-align: left;
+  padding: 2%;
+  width: 50%;
+  border-radius: 50px;
+}
+
+legend {
+  font-size: 120%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+form {
+  margin: auto 0;
+}
+
+#getData {
+  background:transparent url(../icons8-Pokeball-96.png) no-repeat center;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 110px;
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+
+}
+
+.view.ng-animate {
+  transition: all ease 0.4s;
+  position: absolute;
+}
+ 
+.view.ng-enter {
+  top: 500px;
+  opacity: 0;
+}
+ 
+.view.ng-leave, 
+.view.ng-enter.ng-enter-active {
+  top: 0;
+  opacity: 1;
+}
+ 
+.view.ng-leave.ng-leave-active {
+  top: -200px;
+  opacity: 0;
+}
+

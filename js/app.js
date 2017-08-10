@@ -1,4 +1,4 @@
-var pokeApp = angular.module("pokeApp", ["ngRoute"]);
+var pokeApp = angular.module("pokeApp", ["ngRoute", "ngAnimate"]);
 
 pokeApp.config(function($routeProvider) {
 	
