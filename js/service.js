@@ -18,7 +18,7 @@ app.service("fizzBuzzService", function() {
       		return "Buzz";
     	} else {
       		console.log(num);
-      		return num;
+      		return num + " is neither Fizzy or Buzzy!";
     	}
     }
     // When using service, set method on `this`.
