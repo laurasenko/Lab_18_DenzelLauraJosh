@@ -26,13 +26,30 @@ pokeApp.controller("fizzBuzzController", function($scope, fizzBuzzService) {
     $scope.toFizzBuzz = function() {
         $scope.pokeFizzBuzz = fizzBuzzService.toFizzBuzz($scope.number);
     };
-
 });
 
 pokeApp.controller("pokeController", function ($scope, pokeService) {
-  $scope.posts = [];  
-  var token = pokeService.getPokemonData();
-    token.then(function(response) {
-        $scope.posts = response.data.data;
-    });
+  $scope.pokeID;
+
+  $scope.getPokemonData = function () {
+  	fizzBuzzService.setId($scope.pokeID)
+  	var token = pokeService.getPokemonData($scope.pokeID);
+		
+	token.then(function(response) {
+        $scope.pokemon = response.data;
+
+        console.log($scope.pokemon);
+
+  	});
+  };
+});
+
+pokeApp.directive("pokemon", function () {
+	return {
+		templateUrl:"partials/pokemon.html"
+	}
+}).directive("move", function () {
+	return {
+		templateUrl:"partials/move.html"
+	};
 });

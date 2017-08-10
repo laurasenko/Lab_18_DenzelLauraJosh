@@ -26,10 +26,10 @@ app.service("fizzBuzzService", function() {
 });
 
 app.service('pokeService', function($http) {
-    this.getPokemonData = function() {
-        var url = "http://pokeapi.co/api/v2";
+    this.getPokemonData = function(id) {
+        var url = "http://pokeapi.co/api/v2/pokemon/";
 
-        var promise = $http.get("http://pokeapi.co/api/v2/");
+        var promise = $http.get(url + id);
 
         return promise;
     }
