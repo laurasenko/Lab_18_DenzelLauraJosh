@@ -14,25 +14,33 @@ pokeApp.config(function($routeProvider) {
 
 	$routeProvider.otherwise ({
 		template: "Choose a view"
+	});
+
 });
 
-app.controller("fizzBuzzController", function($scope, service) {
+pokeApp.controller("fizzBuzzController", function($scope, service) {
 	//initializes empty array
 	//$scope.words = {};   
     // Add a variable called "setInput" to the scope.
     //$scope.setInput = function() {
     //	madLibsService.setInput($scope.words);
     //	$location.path("/display");
+    var fizzBuzz;
+    $scope.fizzBuzz = function () {
+    	service.fizzBuzz($scope.fizzBuzz)
     }
+
+    
 });
 
-app.controller("pokeController", function($scope, service) {
+pokeApp.controller("pokeController", function($scope, service) {
 	//initializes empty array
 	$scope.pokemonTraits = {};   
-    // Add an object called "pokeTraits" to the scope.
+    // Add "pokeTraits" to the scope.
     $scope.pokeTraits = function() {
     	service.pokeTraits($scope.pokemonTraits);
     	//$location.path("/display");
     }
+    
 });
 
