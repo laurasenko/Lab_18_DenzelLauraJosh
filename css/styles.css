@@ -4,8 +4,8 @@
 	padding:0;
 }
 
-main {
-  margin-left: 25%;
+html, body {
+  min-height: 1080px;
 }
 
 @font-face {
@@ -65,8 +65,10 @@ h1{
 }
 
 .container-link {
-  color: white;
+  position: fixed;
+  right: 5px;
   bottom: 5px;
+  color: white;
 }
 
 /*The styles for the selected Pokémon*/
@@ -103,6 +105,27 @@ h1{
 .pokemon h2 {
   margin-left:27px;
 }
+
+table {
+  font-size: 1.5em;
+}
+td {
+  width: 85px;
+}
+
+tr td:nth-child(2) {
+  text-align: right;
+}
+
+tr th:nth-child(1) {
+  text-align: left;
+} 
+
+tr th:nth-child(2) {
+  text-align: right;
+} 
+
+
 .moves {
   width:90%;
   display: flex;
@@ -130,6 +153,7 @@ fieldset {
   border-radius: 50px;
   border: 5px solid black;
   box-shadow: -20px 20px 31px 4px black;
+  margin: 0px auto;
 }
 
 fieldset img {
@@ -196,16 +220,14 @@ label input {
 }
 
 form {
-
-  margin: auto 0;
   margin-top: 5%;
-
-  margin: 30px auto 20px;
+  margin: 30px auto;
   text-align: center;
-
 }
 
 #getData {
+  position: relative;
+  bottom: 16px;
   background:transparent url(../icons8-Pokeball-96.png) no-repeat center;
   color: black;
   font-weight: bold;
