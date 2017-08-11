@@ -27,7 +27,7 @@ app.service("fizzBuzzService", function() {
 
 app.service('pokeService', function($http) {
     this.getPokemonData = function(id) {
-        var url = "http://pokeapi.co/api/v2/pokemon/";
+        var url = "https://pokeapi.co/api/v2/pokemon/";
 
         var promise = $http.get(url + id);
 

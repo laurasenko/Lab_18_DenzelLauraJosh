@@ -13,7 +13,7 @@ pokeApp.config(function($routeProvider) {
 	});
 
 	$routeProvider.otherwise ({
-		templateUrl: "partials/api.html"
+		redirectTo: "/api"
 	});
 
 });
