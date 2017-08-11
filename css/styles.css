@@ -46,6 +46,8 @@ h1{
 
 .container-link {
   color: white;
+  position: absolute;
+  bottom: 5px;
 }
 
 /*The styles for the selected Pokémon*/
@@ -73,10 +75,13 @@ h1{
   position:absolute;
   top:0;
   right:0;
-  width:50%;
+  width:45%;
   padding:10px;
 }
 
+.pokemon h2 {
+  margin-left:27px;
+}
 .moves {
   width:90%;
   display: flex;
@@ -92,6 +97,7 @@ h1{
   padding: 2px 5px;
   box-shadow: 1px 1px 3px black;
   margin: 5px;
+  background-color: #a3a3a3;
 }
 
 fieldset {
