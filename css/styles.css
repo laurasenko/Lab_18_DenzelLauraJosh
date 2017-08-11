@@ -122,6 +122,8 @@ h1{
   background-color: #a3a3a3;
 }
 
+/*Fizzbuzz form*/
+
 fieldset {
   background-color: red;
   text-align: left;
@@ -205,6 +207,8 @@ form {
 
 }
 
+/*pokeball button*/
+
 #getData {
   background:transparent url(../icons8-Pokeball-96.png) no-repeat center;
   color: black;
@@ -224,6 +228,7 @@ form {
   color: darkred;
 }
 
+/*animate view transitions*/
 .view.ng-animate {
   transition: all ease 0.7s;
   position: absolute;
@@ -253,6 +258,60 @@ form {
  .pokemon.ng-enter.ng-enter-active {
   opacity: 1;
  }
+
+/*Placeholder font changes*/
+
+label input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    red;
+    opacity: 0.7;
+    font-weight: bold;
+}
+label input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    red;
+   opacity:  0.7;
+   font-weight: bold;
+}
+label input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    red;
+   opacity:  0.7;
+   font-weight: bold;
+}
+label input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    red;
+   opacity: 0.7;
+   font-weight: bold;
+}
+label input::-ms-input-placeholder { /* Microsoft Edge */
+   color:    red;
+   opacity: 0.7;
+   font-weight: bold;
+}
+
+fieldset input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    red;
+    opacity: 0.7;
+    font-weight: bold;
+}
+fieldset input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    red;
+   opacity:  0.7;
+   font-weight: bold;
+}
+fieldset input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    red;
+   opacity:  0.7;
+   font-weight: bold;
+}
+fieldset input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    red;
+   opacity: 0.7;
+   font-weight: bold;
+}
+fieldset input::-ms-input-placeholder { /* Microsoft Edge */
+   color:    red;
+   opacity: 0.7;
+   font-weight: bold;
+}
 
 
 
