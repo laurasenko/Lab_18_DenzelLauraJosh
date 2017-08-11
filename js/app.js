@@ -30,6 +30,7 @@ pokeApp.controller("fizzBuzzController", function($scope, fizzBuzzService) {
 
 pokeApp.controller("pokeController", function ($scope, pokeService) {
   $scope.pokeID;
+  $scope.checkMe= false;
    
   $scope.getPokemonData = function () {
 
@@ -41,6 +42,7 @@ pokeApp.controller("pokeController", function ($scope, pokeService) {
 
         $scope.name= $scope.capMe($scope.pokemon.name);
         $scope.type= $scope.capMe($scope.pokemon.types[0].type.name);
+        $scope.checkMe =true;
   	});
   };
 
