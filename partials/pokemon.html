@@ -4,7 +4,7 @@
   <div class="info">
     <p class="names">
       <span class="name">
-      	{{pokemon.name}} | <span class="pokeId">{{pokemon.id}}</span> 
+      	{{name}} | <span class="pokeId">{{pokemon.id}}</span> 
       </span>      
     </p>
     
@@ -17,27 +17,24 @@
 
         <tr>
           <td>Height</td>
-          <td>{{pokemon.height/10}}m</td>
+          <td> {{pokemon.height/10}}m</td>
         </tr>
 
         <tr>
           <td>Weight</td>
-          <td>{{pokemon.weight/10}}kg</td>
+          <td> {{pokemon.weight/10}}kg</td>
         </tr>
         <tr>
           <td>Type</td>
-          <td>{{pokemon.types[0].type.name}}</td>
+          <td> {{type}}</td>
         </tr>
       </table>
     </div>
-    
-    <div class="text">
-      <p>This pokemon is a pokemon that does things.</p>
-    </div>
   </div>
+  <h2>Moveset</h2>
   
   <div class="moves">
-  	<h2>Moveset</h2>
-	<div class="move" ng-repeat="move in moves | limitTo:4"></div>
+  	
+	  <move class="move" ng-repeat="move in pokemon.moves | limitTo:8"></move>
   </div>
 </div>
